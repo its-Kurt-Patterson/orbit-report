@@ -13,4 +13,12 @@ export class Satellite {
         this.orbitType = orbitType;
         this.operational = operational;
     }
+    // declare shouldShowWarning method...
+    shouldShowWarning(): boolean {
+        if(this.type == 'Space Debris') {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
